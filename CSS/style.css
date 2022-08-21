@@ -544,8 +544,6 @@ body {
 .Contact {
     height: 200px;
     padding: 10px;
-    background-color: var(--secondary-color);
-    
 }
 .Contact .container {
     height: 100%;
