@@ -469,18 +469,72 @@ body {
 }
 .Resume .container a {
     text-decoration: none;
-    font-size: 25px;
-    color: var(--section-background);
-    border: solid var(--section-background) 3px;
-    padding: 0 30px;
+    border: solid var(--main-color) 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.Resume .container a::before {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: var(--main-color);
+    left: -143%;
+    bottom: -302%;
+    transform: rotate(341deg);
+    transition: 0.5s left;
+    -webkit-transition: 0.5s left;
+    -moz-transition: 0.5s left;
+    -ms-transition: 0.5s left;
+    -o-transition: 0.5s left;
+}
+.Resume a:hover::before {
+    animation-name: hover;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+.Resume a:hover {
+    color: var(--secondary-color);
+    border: solid var(--secondary-color) 1px;
+}
+@keyframes hover {
+    10% {
+        left: -139%;
+    }
+    20% {
+        left: -119%;
+    }
+    40% {
+        left: -99%;
+    }
+    60% {
+        left: -79%;
+    }
+    80% {
+        left: -59%;
+    }
+    100% {
+        left: -29%;
+    }
+}
+.Resume .container a span {
+    color: var(--main-color);
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 6px;
-    font-weight: 700;
+    font-size: 20px;
+    padding: 10px 15px;
+    z-index: 0;
 }
-.Resume .container a:hover {
-    border: solid var(--main-color) 3px;
-    color: var(--main-color);
+.Resume a:hover span {
+    color: var(--secondary-color);
 }
 /* End Resume */
 /* Start Portfolio */
@@ -544,6 +598,7 @@ body {
 .Contact {
     height: 200px;
     padding: 10px;
+    background-color: var(--secondary-color);
 }
 .Contact .container {
     height: 100%;
