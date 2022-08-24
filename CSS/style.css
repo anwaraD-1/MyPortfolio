@@ -611,9 +611,9 @@ body {
     width: 80px;
 }
 .Contact .container .icons {
-    width: 100px;
+    width: 190px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     column-gap: 30px;
     margin-top: 74px;
     position: relative;
@@ -625,7 +625,7 @@ body {
     height: 1px;
     background-color: var(--section-background);
     top: -20px;
-    left: -50%;
+    left: -7%;
 }
 .Contact .container .icons i {
     font-size: 20px;
