@@ -660,6 +660,11 @@ body {
     font-size: 15px;
     font-weight: 700;
 }
+@media (max-width: 768px) {
+    .Footer .container {
+        font-size: 12px;
+    }
+}
 .Footer .container span {
     color: var(--section-background);
     padding: 0 10px 0;
