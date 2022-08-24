@@ -618,6 +618,11 @@ body {
     margin-top: 74px;
     position: relative;
 }
+@media (max-width: 768px) {
+    .Contact .container .icons {
+        width: 167px;
+    }
+}
 .Contact .container .icons::before {
     content: "";
     position: absolute;
