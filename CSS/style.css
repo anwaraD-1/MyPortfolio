@@ -599,6 +599,7 @@ body {
     height: 200px;
     padding: 10px;
     background-color: var(--secondary-color);
+    position: relative;
 }
 .Contact .container {
     height: 100%;
@@ -644,6 +645,40 @@ body {
 }
 .Contact .container .icons i:hover {
     color: var(--main-color);
+}
+.Contact .up-btn {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: var(--main-color);
+}
+@media (max-width: 768px) {
+    .Contact .up-btn {
+       display: none;
+    }
+}
+.Contact .up-btn:hover::after {
+    display: block;
+}
+.Contact .up-btn::after {
+    content: "Scroll To Top";
+    position: absolute;
+    right: 50px;
+    bottom: 3px;
+    width: 101px;
+    font-size: 12px;
+    padding: 10px;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    font-weight: 800;
+    display: none;
+
+}
+.Contact .up-btn i {
+    color: var(--secondary-color);
+    font-size: 20px;
 }
 /* End Contact */
 /* Start Footer  */
