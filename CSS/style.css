@@ -130,7 +130,7 @@ body {
 }
 @media (max-width: 922px) {
     .Landing {
-        height: 467px;
+        height: 540px;
         background-image: url(../IMG/bckg.jpg);
         background-size: cover;
     }
