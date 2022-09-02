@@ -57,6 +57,8 @@ body {
     font-weight: 700;
     text-transform: capitalize;
     background-color: var(--secondary-color);
+    background-image: url(../IMG/sections-backg.png);
+    background-size: 100%;
 }
 @media (max-width: 768px) {
     .bckg {
@@ -564,7 +566,15 @@ body {
     height: 400px;
     padding: 10px;
     background-color: var(--secondary-section-background);
+    background-image: url(../IMG/contact-backg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
     position: relative;
+}
+@media (max-width: 768px) {
+    .Contact {
+        background-image: url(../IMG/contact-mobile-backg.png);
+    }
 }
 .Contact .container {
     height: 100%;
