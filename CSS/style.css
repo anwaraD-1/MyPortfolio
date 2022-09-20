@@ -132,13 +132,13 @@ body {
     background-color: #303030;
     position: relative;
 }
-@media (max-width: 922px) {
+/* @media (max-width: 922px) {
     .Landing {
         height: 540px;
         background-image: url(../IMG/bckg.jpg);
         background-size: cover;
     }
-}
+} */
 .Landing::after {
     content: "";
     position: absolute;
