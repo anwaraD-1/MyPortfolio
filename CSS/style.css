@@ -556,10 +556,46 @@ body {
     border: 3px solid var(--secondary-color);
     filter: blur(0.8px);
     -webkit-filter: blur(0.8px);
+    transition: 0.5s border;
+    -webkit-transition: 0.5s border;
+    -moz-transition: 0.5s border;
+    -ms-transition: 0.5s border;
+    -o-transition: 0.5s border;
 }
 .Portfolio .container .section span:hover {
     filter: blur(0px);
     -webkit-filter: blur(0px);
+    border: 3px solid var(--secondary-section-background);
+    cursor: pointer;
+}
+.Portfolio .container .section span:nth-of-type(2) {
+    position: relative;
+}
+.Portfolio .container .section span i {
+    position: absolute;
+    font-size: 20px;
+    color: var(--secondary-color);
+    right: -40px;
+    bottom: 10px;
+    animation-name:  anm;
+    animation-duration:1.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: 1s right;
+    -webkit-transition: 1s right;
+    -moz-transition: 1s right;
+    -ms-transition: 1s right;
+    -o-transition: 1s right;
+}
+@keyframes anm {
+    100% {
+        right: 5px;
+        bottom: 27px;
+    }
+}
+.Portfolio .container .section:hover i {
+    display: none;
 }
 /* End Portfolio */
 /* Start Contact */
@@ -640,12 +676,30 @@ body {
     align-items: center;
 }
 .Contact .up-btn {
+    height: 41px;
     position: absolute;
     bottom: 40px;
     right: 40px;
-    padding: 10px;
     text-decoration: none;
-    background-color: #FFFFFF
+    background-color: #FFFFFF;
+    padding: 10px;
+    transition: 0.3s padding;
+    -webkit-transition: 0.3s padding;
+    -moz-transition: 0.3s padding;
+    -ms-transition: 0.3s padding;
+    -o-transition: 0.3s padding;
+}
+.Contact .up-btn:hover {
+    animation-name:  top;
+    animation-duration:0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes top {
+    100% {
+        padding: 8px 10px 12px; 
+    }
 }
 .Contact .up-btn:hover {
     background-color: var(--main-color);
